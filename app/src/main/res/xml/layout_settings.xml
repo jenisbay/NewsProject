@@ -13,7 +13,7 @@
 
         <SwitchPreference
             android:defaultValue="false"
-            android:key="darkTheme"
+            android:key="nightMode"
             android:title="@string/settingsThemeTitle" />
 
     </PreferenceCategory>

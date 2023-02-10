@@ -6,5 +6,6 @@ object Constants {
     const val PAGE_SIZE: Int = 100
     const val PAGE: Int = 1
     const val LANGUAGE: String = "language"
+    const val NIGHT_MODE: String = "nightMode"
 
 }
