@@ -5,18 +5,6 @@ package com.example.newsproject.utils
 object Language{
     private val languages: HashMap<String, HashMap<String, String>> = hashMapOf(
         Pair(
-            "ar",
-            hashMapOf(
-                Pair("general", "لمحة عامة"),
-                Pair("business", "الأعمال"),
-                Pair("science", "العلوم"),
-                Pair("sports", "الرياضة"),
-                Pair("health", "الصحة"),
-                Pair("technology", "التكنولوجيا"),
-                Pair("entertainment", "الترفيه"),
-            ),
-        ),
-        Pair(
             "de",
             hashMapOf(
                 Pair("general", "Allgemein"),

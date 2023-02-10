@@ -2,19 +2,19 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory android:title="App preferences">
+    <PreferenceCategory android:title="@string/app_preferences">
 
         <ListPreference
             android:defaultValue="us"
             android:entries="@array/languagesISO"
             android:entryValues="@array/languagesValues"
             android:key="language"
-            app:title="Language" />
+            app:title="@string/settingsLanguageTitle" />
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="darkTheme"
-            android:title="Dark Theme" />
+            android:title="@string/settingsThemeTitle" />
 
     </PreferenceCategory>
 

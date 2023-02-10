@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projet d\'Actualités</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
+    <string name="general">Général</string>
+    <string name="entertainment">Divertissement</string>
+    <string name="health">Santé</string>
+    <string name="business">Affaires</string>
+    <string name="sports">Sport</string>
+    <string name="technology">Technologie</string>
+    <string name="science">Sciences</string>
+    <string name="search">Rechercher</string>
+    <string name="start_searching">Lancer la Recherche</string>
+
+    <string name="latest">Dernier</string>
+    <string name="settings">Paramètre</string>
+    <string name="settingsThemeTitle">Thème Sombre</string>
+    <string name="settingsLanguageTitle">Langue</string>
+
+    <string name="lang_de">Allemand</string>
+    <string name="lang_en">Anglais</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_it">Chinois</string>
+    <string name="lang_pt">Portugais</string>
+    <string name="lang_ru">Russe</string>
+    <string name="lang_zh">Chinois</string>
+    <string name="app_preferences">Préférences de l\'Application</string>
+
+</resources>

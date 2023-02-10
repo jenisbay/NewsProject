@@ -58,17 +58,27 @@ class LatestNewsFragment : Fragment() {
         _shimmerFrameLayout = binding.shimmerViewContainer
         _recyclerView = binding.newsRecyclerView
 
-
         return binding.root
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupRecyclerView()
         setupListeners()
         loadNews()
+    }
+
+    private fun setResources(){
+        binding.apply {
+            chipGeneral.text = resources.getString(R.string.general)
+            chipEntertainment.text = resources.getString(R.string.entertainment)
+            chipBusiness.text = resources.getString(R.string.business)
+            chipHealth.text = resources.getString(R.string.health)
+            chipScience.text = resources.getString(R.string.science)
+            chipSports.text = resources.getString(R.string.sports)
+            chipTechnology.text = resources.getString(R.string.technology)
+        }
     }
 
     private fun loadNews() {

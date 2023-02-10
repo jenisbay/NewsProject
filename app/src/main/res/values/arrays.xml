@@ -2,18 +2,16 @@
 <resources>
 
     <string-array name="languagesISO">
-        <item>Arabic</item>
-        <item>German</item>
-        <item>English</item>
-        <item>French</item>
-        <item>Italian</item>
-        <item>Portuguese</item>
-        <item>Russian</item>
-        <item>Chinese</item>
+        <item>@string/lang_de</item>
+        <item>@string/lang_en</item>
+        <item>@string/lang_fr</item>
+        <item>@string/lang_it</item>
+        <item>@string/lang_pt</item>
+        <item>@string/lang_ru</item>
+        <item>@string/lang_zh</item>
     </string-array>
 
     <string-array name="languagesValues">
-        <item>ar</item>
         <item>de</item>
         <item>en</item>
         <item>fr</item>
