@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">News Project</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
     <string name="general">General</string>
     <string name="entertainment">Entertainment</string>
@@ -12,4 +11,21 @@
     <string name="science">Science</string>
     <string name="search">Search</string>
     <string name="start_searching">Start Searching</string>
+
+    <string name="latest">Latest</string>
+    <string name="settings">Settings</string>
+    <string name="settingsThemeTitle">Dark Theme</string>
+    <string name="settingsLanguageTitle">Language</string>
+    <string name="app_preferences">App Preferences</string>
+
+    <string name="lang_de">German</string>
+    <string name="lang_en">English</string>
+    <string name="lang_fr">French</string>
+    <string name="lang_it">Italian</string>
+    <string name="lang_pt">Portuguese</string>
+    <string name="lang_ru">Russian</string>
+    <string name="lang_zh">Chinese</string>
+
+
+
 </resources>
