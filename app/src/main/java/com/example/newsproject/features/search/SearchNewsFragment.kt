@@ -84,9 +84,9 @@ class SearchNewsFragment : Fragment() {
             MaterialDividerItemDecoration.VERTICAL
         )
 
-        searchNewsAdapter.setOnItemClickListener { url ->
+        searchNewsAdapter.setOnItemClickListener { article ->
             val bundle = Bundle().apply {
-                putString("url", url)
+                putSerializable("article", article)
             }
             findNavController().navigate(R.id.action_searchNewsFragment_to_webViewActivity, bundle)
         }

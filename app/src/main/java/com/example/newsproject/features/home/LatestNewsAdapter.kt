@@ -34,7 +34,7 @@ class LatestNewsAdapter @Inject constructor() : RecyclerView.Adapter<LatestNewsA
         holder.title.text = article.title
         holder.cardViewImage.setOnClickListener {
             onItemClickListener?.let {
-                it(article.url)
+                it(article)
             }
         }
     }
@@ -67,4 +67,4 @@ class LatestNewsAdapter @Inject constructor() : RecyclerView.Adapter<LatestNewsA
 }
 
 
-typealias OnItemClickListener = (String) -> Unit
+typealias OnItemClickListener = (Article) -> Unit

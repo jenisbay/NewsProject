@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">新闻项目</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
     <string name="general">一般事务</string>
     <string name="entertainment">娱乐节目</string>
     <string name="health">健康</string>
@@ -26,5 +24,10 @@
     <string name="lang_ru">俄语</string>
     <string name="lang_zh">中文</string>
     <string name="app_preferences">应用程序首选项</string>
+    <string name="share">份额</string>
+    <string name="save">储蓄</string>
+    <string name="delete">删除</string>
+    <string name="saved_stories">保存的故事</string>
+    <string name="find_your_saved_articles">查找您保存的文章</string>
 
 </resources>

@@ -1,12 +1,10 @@
 package com.example.newsproject.features.home
 
-import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
@@ -17,7 +15,6 @@ import com.example.newsproject.MainActivity
 import com.example.newsproject.R
 import com.example.newsproject.databinding.FragmentLatestNewsBinding
 import com.example.newsproject.utils.Constants.LANGUAGE
-import com.example.newsproject.utils.Language
 import com.facebook.shimmer.ShimmerFrameLayout
 import javax.inject.Inject
 
@@ -110,9 +107,10 @@ class LatestNewsFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        latestNewsAdapter.setOnClickListener { url ->
+        latestNewsAdapter.setOnClickListener { article ->
+
             val bundle = Bundle().apply {
-                putString("url", url)
+                putSerializable("article", article)
             }
             findNavController().navigate(R.id.action_latestNewsFragment_to_webViewActivity, bundle)
         }

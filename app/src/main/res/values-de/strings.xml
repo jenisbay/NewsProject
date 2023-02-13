@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Nachrichtenprojekt</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
     <string name="general">Allgemein</string>
     <string name="entertainment">Unterhaltung</string>
     <string name="health">Gesundheit</string>
@@ -27,5 +25,10 @@
     <string name="lang_ru">Russisch</string>
     <string name="lang_zh">Chinesisch</string>
     <string name="app_preferences">App-Einstellungen</string>
+    <string name="share">Aktie</string>
+    <string name="save">Speichern</string>
+    <string name="delete">Löschen</string>
+    <string name="saved_stories">Gespeicherte Geschichten</string>
+    <string name="find_your_saved_articles">Finden Sie Ihre gespeicherten Artikel</string>
 
 </resources>

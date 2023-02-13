@@ -1,4 +1,4 @@
-package com.example.newsproject.features.search
+package com.example.newsproject.features.saved
 
 import android.view.LayoutInflater
 import android.view.View
@@ -11,34 +11,35 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsproject.R
 import com.example.newsproject.data.models.Article
-import com.example.newsproject.features.home.OnItemClickListener
+import com.example.newsproject.features.home.LatestNewsAdapter
 import javax.inject.Inject
 
-class SearchNewsAdapter @Inject constructor() : RecyclerView.Adapter<SearchNewsAdapter.SearchNewsViewHolder>() {
 
-    class SearchNewsViewHolder(view: View): RecyclerView.ViewHolder(view){
-        val image: ImageView = view.findViewById(R.id.imageView)
+
+class SavedNewsAdapter @Inject constructor() : RecyclerView.Adapter<SavedNewsAdapter.SavedNewsViewHolder>() {
+
+    class SavedNewsViewHolder(view: View): RecyclerView.ViewHolder(view){
+        val cardViewImage: ImageView = view.findViewById(R.id.cardViewImage)
         val title: TextView = view.findViewById(R.id.tvTitle)
-        val date: TextView = view.findViewById(R.id.tvDate)
+        var article: Article? = null
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchNewsViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.search_news_item, parent, false)
-        return SearchNewsViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SavedNewsViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.latest_news_item, parent, false)
+        return SavedNewsViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: SearchNewsViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SavedNewsViewHolder, position: Int) {
         val article = differ.currentList[position]
 
-        Glide.with(holder.itemView).load(article.urlToImage).placeholder(R.drawable.news_placeholder).into(holder.image)
+        Glide.with(holder.itemView).load(article.urlToImage).placeholder(R.drawable.news_placeholder).into(holder.cardViewImage)
         holder.title.text = article.title
-        holder.date.text = article.publishedAt
-        holder.itemView.setOnClickListener {
+        holder.article = article
+        holder.cardViewImage.setOnClickListener {
             onItemClickListener?.let {
                 it(article)
             }
         }
-
     }
 
     override fun getItemCount(): Int {
@@ -63,9 +64,10 @@ class SearchNewsAdapter @Inject constructor() : RecyclerView.Adapter<SearchNewsA
 
     private var onItemClickListener: OnItemClickListener? = null
 
-    fun setOnItemClickListener(listener: OnItemClickListener){
+    fun setOnClickListener(listener: OnItemClickListener){
         onItemClickListener = listener
     }
-
-
 }
+
+
+typealias OnItemClickListener = (Article) -> Unit

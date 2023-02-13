@@ -28,8 +28,11 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.newsproject.features.settings.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        android:label="fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_savedNewsFragment"
+            app:destination="@id/savedNewsFragment" />
+    </fragment>
 
     <activity
         android:id="@+id/webViewActivity"
@@ -37,10 +40,19 @@
         android:label="activity_web_view"
         tools:layout="@layout/activity_web_view" >
         <argument
-            android:name="url"
-            app:argType="string"
-            android:defaultValue="" />
+            android:name="article"
+            app:argType="com.example.newsproject.data.models.Article" />
     </activity>
+
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.example.newsproject.features.saved.SavedNewsFragment"
+        android:label="fragment_saved_news"
+        tools:layout="@layout/fragment_saved_news" >
+        <action
+            android:id="@+id/action_savedNewsFragment_to_webViewActivity"
+            app:destination="@id/webViewActivity" />
+    </fragment>
 
 
 </navigation>

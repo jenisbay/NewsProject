@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">News Project</string>
+    <string name="app_name" translatable="false">News Project</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
+    <string name="lorem_ipsum" translatable="false">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
     <string name="general">General</string>
     <string name="entertainment">Entertainment</string>
     <string name="health">Health</string>
@@ -25,7 +25,10 @@
     <string name="lang_pt">Portuguese</string>
     <string name="lang_ru">Russian</string>
     <string name="lang_zh">Chinese</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
 
-
-
+    <string name="delete">Delete</string>
+    <string name="saved_stories">Saved Stories</string>
+    <string name="find_your_saved_articles">Find your saved articles</string>
 </resources>

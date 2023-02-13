@@ -16,6 +16,10 @@
             android:key="nightMode"
             android:title="@string/settingsThemeTitle" />
 
+        <Preference app:title="@string/saved_stories"
+            android:key="navigateToSavedNewsFragment"
+            android:summary="@string/find_your_saved_articles" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

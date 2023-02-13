@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Новостной Проект</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
     <string name="general">Общие</string>
     <string name="entertainment">Развлечение</string>
     <string name="health">Здоровье</string>
@@ -26,5 +24,10 @@
     <string name="lang_ru">Русский</string>
     <string name="lang_zh">Китайский</string>
     <string name="app_preferences">Настройки приложения</string>
+    <string name="share">Делиться</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="saved_stories">Сохраненные истории</string>
+    <string name="find_your_saved_articles">Найдите свои сохраненные статьи</string>
 
 </resources>
